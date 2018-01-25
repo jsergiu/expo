@@ -1,9 +1,9 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 
-export default class TeamViewScreen extends React.Component {
+export default class TeamDeleteScreen extends React.Component {
   static navigationOptions = {
-    title: 'TeamViewScreen',
+    title: 'TeamDeleteScreen',
   };
 
   _handleClick = () => {

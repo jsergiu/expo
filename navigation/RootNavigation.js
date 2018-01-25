@@ -7,12 +7,14 @@ import registerForPushNotificationsAsync from '../api/registerForPushNotificatio
 
 import TeamCreateScreen from '../screens/TeamCreateScreen'
 import TeamViewScreen from '../screens/TeamViewScreen'
+import TeamDeleteScreen from '../screens/TeamDeleteScreen'
 
 const RootStackNavigator = StackNavigator(
   {
     Main: { screen: MainTabNavigator  },
     CreateTeam: { screen: TeamCreateScreen },
-    ViewTeam: { screen: TeamViewScreen }
+    ViewTeam: { screen: TeamViewScreen },
+    DeleteTeam: { screen: TeamDeleteScreen }
   },
   {
     navigationOptions: () => ({

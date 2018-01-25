@@ -1,19 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, TouchableOpacity , Text } from 'react-native';
+import { NavigationActions } from 'react-navigation';
 
 export class TeamListItem extends React.Component {
 
 	_handleClick = () => {
-    const { navigate } = this.props.navigation;
-    navigate('ViewTeam');
+		console.log('wtf')
 	}
 	
   render() {
     return (
-		<View style={s.item} onPress={ this._handleClick }>
-			<Text>{ this.props.title }</Text>
-		</View>
-	)
+			<TouchableOpacity style={s.item}>
+				<Text onPress={ this._handleClick } style={s.title}>{ this.props.title }</Text>
+			</TouchableOpacity>
+		)
   }
 }
 
@@ -21,7 +21,11 @@ const s = StyleSheet.create({
   item: {
 		backgroundColor: '#eee',
 		height: 150,
-		marginBottom: 15,
+		marginBottom: 16,
+		textAlign: 'center',
 		width: '100%',
+	},
+	title: {
+		fontSize: 24,
 	}
 })
