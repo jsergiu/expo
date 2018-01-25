@@ -5,7 +5,6 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
 } from 'react-native';
 import { TeamList } from '../components/TeamList/TeamList'
@@ -17,7 +16,7 @@ export default class HomeScreen extends React.Component {
 
   _handleCreateTeam = () => {
     const { navigate } = this.props.navigation;
-    navigate('TeamCreate');
+    navigate('CreateTeam');
   }
 
   render() {

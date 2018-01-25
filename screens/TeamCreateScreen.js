@@ -9,7 +9,7 @@ export default class TeamCreateScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>Edit teeeeam</Text>
+        <Text>Edit team</Text>
       </ScrollView>
     );
   }

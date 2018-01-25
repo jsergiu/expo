@@ -6,10 +6,13 @@ import MainTabNavigator from './MainTabNavigator';
 import registerForPushNotificationsAsync from '../api/registerForPushNotificationsAsync';
 
 import TeamCreateScreen from '../screens/TeamCreateScreen'
+import TeamViewScreen from '../screens/TeamViewScreen'
 
 const RootStackNavigator = StackNavigator(
   {
     Main: { screen: MainTabNavigator  },
+    CreateTeam: { screen: TeamCreateScreen },
+    ViewTeam: { screen: TeamViewScreen }
   },
   {
     navigationOptions: () => ({

@@ -8,14 +8,12 @@ import Colors from '../constants/Colors';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import TeamCreateScreen from '../screens/TeamCreateScreen';
 
 export default TabNavigator(
   {
     Home: { screen: HomeScreen },
     Links: { screen: LinksScreen, },
-    Settings: { screen: SettingsScreen, },
-    CreateTeam: { screen: TeamCreateScreen }
+    Settings: { screen: SettingsScreen, }
   },
   {
     navigationOptions: ({ navigation }) => ({

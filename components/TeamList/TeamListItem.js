@@ -2,9 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export class TeamListItem extends React.Component {
+
+	_handleClick = () => {
+    const { navigate } = this.props.navigation;
+    navigate('ViewTeam');
+	}
+	
   render() {
     return (
-		<View style={s.item}>
+		<View style={s.item} onPress={ this._handleClick }>
 			<Text>{ this.props.title }</Text>
 		</View>
 	)

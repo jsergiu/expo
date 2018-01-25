@@ -9,6 +9,10 @@ export class TeamList extends React.Component {
 				<TeamListItem title="Team one" />
 				<TeamListItem title="Team two" />
 				<TeamListItem title="Team three" />
+				<TeamListItem title="Team four" />
+				<TeamListItem title="Team five" />
+				<TeamListItem title="Team six" />
+				<TeamListItem title="Team seven" />
 			</View>
 		)
   }
