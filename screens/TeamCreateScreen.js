@@ -1,15 +1,15 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 
-export default class LinksScreen extends React.Component {
+export default class TeamCreateScreen extends React.Component {
   static navigationOptions = {
-    title: 'Links',
+    title: 'TeamCreateScreen',
   };
 
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>Second view</Text>
+        <Text>Edit teeeeam</Text>
       </ScrollView>
     );
   }

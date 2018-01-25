@@ -5,11 +5,11 @@ import { StackNavigator } from 'react-navigation';
 import MainTabNavigator from './MainTabNavigator';
 import registerForPushNotificationsAsync from '../api/registerForPushNotificationsAsync';
 
+import TeamCreateScreen from '../screens/TeamCreateScreen'
+
 const RootStackNavigator = StackNavigator(
   {
-    Main: {
-      screen: MainTabNavigator,
-    },
+    Main: { screen: MainTabNavigator  },
   },
   {
     navigationOptions: () => ({
