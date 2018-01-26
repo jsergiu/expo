@@ -1,7 +1,8 @@
 import * as types from '../actions/actionTypes';
 
 const initialState = {
-  count: 0
+  count: 0,
+  isLoggedIn: false,
 };
 
 export default function counter(state = initialState, action = {}) {
