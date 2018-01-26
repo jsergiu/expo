@@ -20,13 +20,15 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
+    const { navigation } = this.props
+
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
 
           <View style={styles.getStartedContainer}>
             <Button title="Create new team" onPress={ this._handleCreateTeam } />
-            <TeamList />
+            <TeamList navigation={ navigation } />
           </View>
         </ScrollView>
       </View>

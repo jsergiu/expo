@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { Button, ScrollView, StyleSheet, Text } from 'react-native';
 
 export default class TeamDeleteScreen extends React.Component {
   static navigationOptions = {

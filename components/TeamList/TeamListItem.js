@@ -1,17 +1,11 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity , Text } from 'react-native';
-import { NavigationActions } from 'react-navigation';
 
-export class TeamListItem extends React.Component {
-
-	_handleClick = () => {
-		console.log('wtf')
-	}
-	
+export class TeamListItem extends React.Component {	
   render() {
     return (
-			<TouchableOpacity style={s.item}>
-				<Text onPress={ this._handleClick } style={s.title}>{ this.props.title }</Text>
+			<TouchableOpacity style={s.item} onPress={ this.props.onPress }>
+				<Text style={s.title}>{ this.props.title }</Text>
 			</TouchableOpacity>
 		)
   }
