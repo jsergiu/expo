@@ -1,21 +1,18 @@
-import * as types from '../actions/actionTypes';
-
 const initialState = {
-  count: 0,
   isLoggedIn: false,
 };
 
 export default function counter(state = initialState, action = {}) {
   switch (action.type) {
-    case types.INCREMENT:
+    case 'AUTH_LOGIN':
       return {
         ...state,
-        count: state.count + 1
+        isLoggedIn: true,
       };
-    case types.DECREMENT:
+    case 'AUTH_LOGOUT':
       return {
         ...state,
-        count: state.count - 1
+        isLoggedIn: false,
       };
     default:
       return state;

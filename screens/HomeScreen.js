@@ -27,7 +27,7 @@ export default class HomeScreen extends React.Component {
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
 
           <View style={styles.getStartedContainer}>
-            <Button title="Create new team" onPress={ this._handleCreateTeam } />
+            <Button title="Create newwww team" onPress={ this._handleCreateTeam } />
             <TeamList navigation={ navigation } />
           </View>
         </ScrollView>

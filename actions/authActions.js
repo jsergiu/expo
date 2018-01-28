@@ -1,13 +1,11 @@
-import * as types from './actionTypes';
-
-export function increment() {
+export const login = () => {
   return {
-    type: types.INCREMENT
+    type: 'AUTH_LOGIN'
   };
 }
 
-export function decrement() {
+export const logout = () => {
   return {
-    type: types.DECREMENT
+    type: 'AUTH_LOGOUT'
   };
 }
